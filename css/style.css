@@ -3,6 +3,9 @@ body {
   color: #434455;
   background-color: #ffffff;
 }
+.main-page {
+  border-bottom: 1px solid #e7e9fc;
+}
 
 a {
   color: inherit;
@@ -56,6 +59,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  padding: 0 15px 0 15px;
 }
 
 .page-nav {
@@ -63,10 +67,11 @@ img {
   gap: 74px;
   padding-top: 24px;
   padding-bottom: 24px;
+  align-items: center;
 }
 .menu {
   display: flex;
-  gap: 24px;
+  gap: 40px;
 }
 .page-logo {
   font-family: 'Raleway', sans-serif;
@@ -76,6 +81,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .page-logo .text-logo {
@@ -96,6 +102,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -117,10 +124,12 @@ img {
   color: #404bbf;
 }
 .hero-container {
-  padding-top: 188px;
   padding-left: 56px;
   padding-right: 56px;
   background-color: #2e2f42;
+  display: block;
+  margin-left: 141px;
+  margin-right: 141px;
 }
 
 .hero-section {
@@ -131,6 +140,7 @@ img {
   background-color: #2e2f42;
   margin-left: auto;
   margin-right: auto;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -143,14 +153,11 @@ img {
   max-width: 496px;
   padding-bottom: 48px;
 }
-.hero-content-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 188px;
-}
+
 .order-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #4d5ae5;
   font-weight: 500;
   line-height: 1.5;
@@ -168,16 +175,15 @@ img {
   background-color: #404bbf;
 }
 .benefits-section {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding: 120px 0;
   background-color: #ffffff;
 }
 .benefits-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 .benefits-list-item {
-  width: calc((100% - 2 * 88px) / 3);
+  width: calc((100% - 72px) / 4);
 }
 .list-title {
   font-weight: 500;
@@ -196,6 +202,7 @@ img {
 }
 
 .team-section {
+  padding: 120px 0;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -204,21 +211,21 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.container-team-card {
-  padding-bottom: 120px;
-}
 
 .team-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
+  gap: 24px;
+}
+.team-container {
+  padding: 32px 0;
 }
 .team-list-item {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
 }
 .team-section-title {
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -261,35 +268,27 @@ img {
   margin-right: auto;
 }
 .portfolio-section {
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  padding: 0;
+  column-gap: 24px;
+  row-gap: 48px;
   list-style: none;
-}
-.portfolio-section-title {
-  padding-top: 104px;
-  padding-bottom: 73px;
 }
 
 .portfolio-list-item {
-  width: calc((210% - 5 * 48px) / 6);
+  width: calc((100% - 48px) / 3);
+}
+.potfolio-container-item {
   border: 1px solid #e7e9fc;
+  border-top: none;
   overflow: hidden;
+  padding: 32px 16px;
 }
 
-.list-title {
-  padding-left: 16px;
-  padding-top: 32px;
-}
-
-.list-text {
-  padding-left: 16px;
-  padding-bottom: 32px;
-}
 .portfolio-section-title {
   font-weight: 700;
   font-size: 36px;
@@ -298,8 +297,10 @@ img {
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .page-footer {
+  padding: 100px 0;
   background-color: #2e2f42;
 }
 .container-footer {
@@ -309,9 +310,9 @@ img {
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 100px;
 }
 .page-footer-logo {
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -319,6 +320,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-bottom: 16px;
 }
 .footer-text-logo {
   color: #f4f4fd;
@@ -327,7 +329,5 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding-bottom: 100px;
-  padding-top: 16px;
   max-width: 264px;
 }
